@@ -1,1 +1,1 @@
-README.md파일 입니다.
+This repo is my pratice of FrontendMentor site challenges.
