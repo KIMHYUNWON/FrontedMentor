@@ -37,7 +37,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL:https://git.hub.com/KIMHYUNWON/FrontedMentor
-- Live Site URL: https://git.hub.com/KIMHYUNWON/FrontedMentor/huddel-landing-page-with-single-introductory-section-master/index.html
+- Live Site URL:https://kimhyunwon.github.io/FrontedMentor/huddle-landing-page-with-single-introductory-section-master/index.html
 
 ## My process
 
