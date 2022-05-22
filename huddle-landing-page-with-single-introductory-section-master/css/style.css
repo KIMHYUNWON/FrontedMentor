@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html{
+    font-size:10px;
+}
+body{
+    position:relative;
+}
+main{
+    height:100%;
+}
+#container{
+    height:100%;
+}
+#box1{
+    grid-area:box1;
+}
+#mockupImage{
+    text-align:center;
+}
+#box2{
+    position:relative;
+    grid-area:box2;
+}
+#content h1{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+}
+#content p{
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+}
+#content button{
+    border-radius:2rem;
+    width:15rem;
+    height:4rem;
+    color:hsl(257, 40%, 49%);
+    font-weight:600;
+}
+#content button:hover{
+    background-color:hsl(300, 69%, 71%);
+    color:#fff;
+}
+#icons{
+    position:absolute;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%; 
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:1440px){
+    body{
+        width:144rem;
+        height:80rem;
+    }
+    #container{
+        display:grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows:1fr;
+        grid-template-areas: 
+            "box1 box2"
+        ;
+        width:144rem;
+        background:url("../images/bg-desktop.svg") no-repeat;
+        background-color:hsl(257, 40%, 49%);
+    }
+    #box1{
+        padding:5rem;
+    }
+    #logo{
+        margin-bottom:5rem;
+    }
+    #content{
+        width:80%;
+        max-height:50%;
+        transform:translateY(20rem);
+    }
+    #content h1{
+        font-size:3.5rem;
+    }
+    #content p{
+        font-size:1.5rem;
+    }
+    #icons{
+        right:5rem;
+        bottom:2rem;
+    }
+}
+@media screen and (max-width:376px){
+    body{
+        width:37.5rem;
+        height:60rem;
+    }
+    #container{
+        display:grid;
+        grid-template-rows:1fr 1fr;
+        grid-template-areas:
+            "box1"
+            "box2"
+        ;
+        width:37.5rem;
+        background:url("../images/bg-mobile.svg") no-repeat;
+        background-color:hsl(257, 40%, 49%);
+    }
+    #box1{
+        padding:2.5rem;
+    }
+    #logoImage{
+        margin-bottom:2rem;
+    }
+    #logo{
+        width:10rem;
+    }
+    #mockup{
+        width:26rem;
+    }
+    #box2{
+        padding:0 4rem 0;
+    }
+    #content{
+        text-align:center;
+    }
+    #content p{
+        font-size:1.2rem;
+    }
+    #icons{ 
+        bottom:4rem;
+        left:15rem;
+    }
+    #icons img{
+        width:2rem;
+    }
+}
