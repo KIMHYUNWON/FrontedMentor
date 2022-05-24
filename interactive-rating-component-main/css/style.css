@@ -1,0 +1,82 @@
+html{
+    font-size:10px;
+}
+body{
+    position:relative;
+    height:100vh;
+    background-color:#000;
+}
+main{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+}
+#rate{   
+    border-radius:2rem;
+    width:20rem;
+    height:21rem;
+    padding:2rem;
+    background-color:hsl(216, 12%, 8%);
+    color:#fff;
+}
+#rate p{
+    color:hsl(216, 12%, 54%);
+}
+#select{
+    display:flex;
+    justify-content:space-between;
+    margin:2rem 0;
+}
+#select button{
+    border:none;
+    border-radius:50%;
+    width:3rem;
+    height:3rem;
+    background-color:hsl(213, 19%, 18%);
+    color:hsl(216, 12%, 54%);
+    font-size:0.5rem;
+}
+#submit button{
+    border-radius:2rem;
+    width:100%;
+    height:2.8rem;
+    background-color:hsl(25, 97%, 53%);
+    color:#fff;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing: 0.2rem;
+}#submit button:hover{
+    background-color:#fff;
+    color:hsl(25, 97%, 53%);
+}
+#thank{
+    display:none;
+    border-radius:2rem;
+    width:30rem;
+    height:30rem;
+    padding:2rem;
+    background-color:hsl(216, 12%, 8%);
+}
+#thank-you-image{
+    margin-top:2rem;
+    text-align:center;
+}
+#rating{
+    border-radius:2rem;
+    width:15rem;
+    height:2rem;
+    margin: 2rem auto 0;
+    background-color:hsl(213, 19%, 18%);
+    color:hsl(25, 97%, 53%);
+    text-align:center;
+    line-height:2rem;
+}
+footer{
+    position:absolute;
+    width:100%;
+    bottom:0;
+}
+.attribution {color:#fff;}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
