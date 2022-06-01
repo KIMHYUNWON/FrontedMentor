@@ -14,7 +14,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [[https://github.com/KIMHYUNWON/FrontedMentor](https://github.com/KIMHYUNWON/FrontedMentor)]
-- Live Site URL: [[https://kimhuynwon.github.io/FrontedMentor/far-accordion-card-main/index.html](https://your-live-site-url.com)](https://kimhyunwon.github.io/FrontedMentor/faq-accordion-card-main/index.html)
+- Live Site URL: [[https://kimhuynwon.github.io/FrontedMentor/far-accordion-card-main/index.html])(https://kimhyunwon.github.io/FrontedMentor/faq-accordion-card-main/index.html)]
 
 
 ### Built with
