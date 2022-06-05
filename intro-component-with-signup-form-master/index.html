@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main>
+    <div id="container">
+      <div id="box1">
+        <div id="title">Learn to code by watching others</div>
+
+        <div id="desc" style="font-size:1.6rem;">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </div>
+      </div>
+      <div id="box2">
+        <div id="price"><span style="font-weight:600">Try it free 7 days</span> then $20/mo. thereafter</div>
+        <form id="user_info">
+          <ul>
+            <li><input type="text" id="firstName" placeholder="First Name"></li>
+            <div id="error_first_name" class="error"></div>
+            <li><input type="text" id="secondName" placeholder="Last Name"></li>
+            <div id="error_second_name" class="error"></div>
+            <li><input type="email" id="emailAddress" placeholder="Email Address"></li>
+            <div id="error_email" class="error"></div>
+            <li><input type="password" id="password" placeholder="Password"></li>
+            <div id="error_password" class="error"></div>
+          </ul>
+          <button>CLAIM YOUR FREE TRIAL</button>
+
+          <div id="click_desc">By clicking the button, you are agreeing to our <span style="color:hsl(0, 100%, 74%);font-weight:600; ">Terms and Services</span></div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
