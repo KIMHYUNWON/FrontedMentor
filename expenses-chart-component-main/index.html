@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main id="container">
+    <div id="balance">
+      My balance<br><span style="font-size:2rem;font-weight:700;line-height:2;">$921.48</span>
+    </div>
+    <div id="spending">
+      <div id="last7days_spending">
+        <span style="font-weight:700; font-size:2.5rem;">Spending - Last 7 days</span>
+        <div id="graphs">
+          <div>
+            <div class="day_spending"></div>
+            <span class="graph"></span>
+            mon
+          </div>
+          <div>
+            <div class="day_spending"></div>
+            <span class="graph"></span>
+            tue
+          </div>
+          <div>
+            <div class="day_spending"></div>
+            <span class="graph" style="background-color:hsl(186, 34%, 60%);"></span>
+            wed
+          </div>
+          <div>
+            <div class="day_spending"></div>
+            <span class="graph"></span>
+            thu
+          </div>
+          <div>
+            <div class="day_spending"></div>
+            <span class="graph"></span>
+            fri
+          </div>
+          <div>
+            <div class="day_spending"></div>
+            <span class="graph"></span>
+            sat
+          </div>
+          <div>
+            <div class="day_spending"></div>
+            <span class="graph"></span>
+            sun
+          </div>
+        </div>
+      </div>
+      <div id="month_spending">
+        <p style="margin:0;">Total this month</p>
+        <p style="margin:0;color:hsl(25, 47%, 15%);font-size:3rem;font-weight:700;">$478.33</p>
+
+        <div id="last_month">
+          <span style="color:hsl(25, 47%, 15%);font-weight:700;">+2.4%</span><br>
+          from last month
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="data.json"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
