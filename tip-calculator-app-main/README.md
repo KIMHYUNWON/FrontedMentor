@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/KIMHYUNWON/FrontedMentor/edit/master/tip-calculator-app-main/README-template.md)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://kimhyunwon.github.io/FrontedMentor/tip-calculator-app-main/index.html)
 
 ## My process
 
