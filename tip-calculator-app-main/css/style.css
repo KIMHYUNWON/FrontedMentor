@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --strongCyan: hsl(172, 67%, 45%);
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan: hsl(186, 14%, 43%);
+    --grayishCyan: hsl(184, 14%, 56%);
+    --lightGrayishCyan: hsl(185, 41%, 84%);
+    --veryLightGrayishCyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+html{
+    font-size:10px;
+    font-family: 'Space Mono', monospace;
+    font-weight:700;
+}
+body{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    background-color:var(--lightGrayishCyan);
+}
+.attribution { 
+    position:absolute;
+    bottom:0;
+    width:100%;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (max-width:720px){
+    #container{
+        width:35rem;
+    }
+    #logo{
+        text-align:center;
+        height:10rem;
+        line-height:10rem;
+    }
+    main{
+        box-sizing: border-box;
+        border-radius: 2rem;
+        min-height:40rem;
+        padding:3rem;
+        background-color:var(--white);
+    }
+    #box1{
+        margin-bottom:2rem;
+    }
+    .item{
+        position:relative;
+        margin-bottom:1rem;
+        color:var(--darkGrayishCyan);
+        font-size:1.4rem;
+    }
+    #billInput{
+        background:url("../images/icon-dollar.svg") no-repeat 5%;
+        background-color:var(--veryLightGrayishCyan);
+    }
+    #numberInput{
+        border-radius:0.5rem;
+        background:url("../images/icon-person.svg") no-repeat 5%;
+        background-color:var(--veryLightGrayishCyan);
+    }
+    .input{
+        box-sizing: border-box;
+        border-radius: 0.3rem;
+        border:none;
+        width:100%;
+        height:4rem;
+        padding:1rem;
+        text-align:right;
+        color:var(--veryDarkCyan);
+        font-size:1.8rem;
+        font-weight:700;
+        cursor:pointer;
+    }
+    .input:focus{
+        outline:2px solid var(--strongCyan);
+    }
+    .zero_message{
+        display:none;
+        position:absolute;
+        right:0;
+        top:10%;
+        
+        color:rgb(217, 80, 80);
+        font-size:1.2rem;
+        font-weight:700;
+    }
+    #tip{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1rem;
+        list-style:none;
+        padding-left:0;
+    }
+    #tip li{
+        display:inline-block;
+        border-radius:0.5rem;
+        height:4rem;
+        background-color:var(--veryDarkCyan);
+        text-align:center;
+        line-height:4rem;
+        color:var(--white);
+        font-size:1.8rem;
+        cursor:pointer
+    }
+    #tip li:not(:last-child):hover {
+        background-color:var(--strongCyan);
+        color:var(--veryDarkCyan);
+    }
+    .custom{
+        box-sizing: border-box;
+        border:2px solid var(--veryLightGrayishCyan);
+        border-radius:0.5rem;
+        width:100%;
+        height:100%;
+        padding:1rem;
+        background-color:var(--veryLightGrayishCyan);
+        color:var(--veryDarkCyan);
+        text-align:right;
+        font-size:1.8rem;
+        font-weight:700;
+        font-family: 'Space Mono', monospace;
+    }
+    .custom::placeholder{
+        color:var(--darkGrayishCyan);
+        text-align:center;
+        font-size:1.7rem;
+        font-weight:700;
+        letter-spacing:0.1rem;
+    }
+    .custom:focus{
+        outline:2px solid var(--strongCyan);
+    }
+    #box2{
+        position:relative;
+        border-radius:1rem;
+        padding: 3rem 2rem 2rem;
+        background-color:var(--veryDarkCyan);
+    }
+    .costBox{
+        position:relative;
+        margin-bottom:3rem;
+    }
+    .cost{
+        color:var(--white);
+        font-size:1.2rem;
+    }
+    .person{
+        color:var(--grayishCyan);
+        font-size:0.8rem;
+    }
+    .costPerPerson{
+        position:absolute;
+        top:-1rem;
+        right:0;
+        color:var(--strongCyan);
+        font-size:3rem;
+    }
+    .button{
+        box-sizing:border-box;
+        width:100%;
+    }
+    .button button{
+        border:none;
+        border-radius:0.5rem;
+        width:100%;
+        height:4rem;
+        background-color:var(--strongCyan);
+        opacity:0.3;
+        color:var(--veryDarkCyan);
+        font-size:1.8rem;
+        font-family: 'Space Mono', monospace;
+        font-weight:700;
+        cursor:pointer;
+    }
+}
+@media screen and (min-width:720px){
+    #container{
+        width:75rem;
+    }
+    #logo{
+        text-align:center;
+        height:20rem;
+        line-height:20rem;
+    }
+    main{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "box1 box2"
+        ;
+        grid-column-gap: 2rem;
+        box-sizing: border-box;
+        border-radius: 2rem;
+        min-height:40rem;
+        padding:4rem;
+        background-color:var(--white);
+    }
+    #box1{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-area: box1;
+    }
+    .item{
+        position:relative;
+        margin-bottom:1rem;
+        color:var(--darkGrayishCyan);
+        font-size:1.4rem;
+    }
+    #billInput{
+        background:url("../images/icon-dollar.svg") no-repeat 5%;
+        background-color:var(--veryLightGrayishCyan);
+    }
+    #numberInput{
+        border-radius:0.5rem;
+        background:url("../images/icon-person.svg") no-repeat 5%;
+        background-color:var(--veryLightGrayishCyan);
+    }
+    .zero_message{
+        display:none;
+        position:absolute;
+        right:0;
+        top:10%;
+        
+        color:rgb(217, 80, 80);
+        font-size:1.2rem;
+        font-weight:700;
+    }
+    .input{
+        box-sizing: border-box;
+        border-radius: 0.3rem;
+        border:none;
+        width:100%;
+        height:4rem;
+        padding:1rem;
+        text-align:right;
+        color:var(--veryDarkCyan);
+        font-size:1.8rem;
+        font-weight:700;
+        cursor:pointer;
+    }
+    .input:focus{
+        outline:2px solid var(--strongCyan);
+    }
+    #tip{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1rem;
+        list-style:none;
+        padding-left:0;
+    }
+    #tip li{
+        display:inline-block;
+        border-radius:0.5rem;
+        height:4rem;
+        background-color:var(--veryDarkCyan);
+        text-align:center;
+        line-height:4rem;
+        color:var(--white);
+        font-size:1.8rem;
+        cursor:pointer
+    }
+    #tip li:not(:last-child):hover {
+        background-color:var(--strongCyan);
+        color:var(--veryDarkCyan);
+    }
+    .custom{
+        box-sizing: border-box;
+        border:2px solid var(--veryLightGrayishCyan);
+        border-radius:0.5rem;
+        width:100%;
+        height:100%;
+        padding:1rem;
+        background-color:var(--veryLightGrayishCyan);
+        color:var(--veryDarkCyan);
+        text-align:right;
+        font-size:1.8rem;
+        font-weight:700;
+        font-family: 'Space Mono', monospace;
+    }
+    .custom::placeholder{
+        color:var(--darkGrayishCyan);
+        text-align:center;
+        font-size:1.7rem;
+        font-weight:700;
+        letter-spacing:0.1rem;
+    }
+    .custom:focus{
+        outline:2px solid var(--strongCyan);
+    }
+    #box2{
+        grid-area:box2;
+        position:relative;
+        border-radius:1rem;
+        padding:4em;
+        background-color:var(--veryDarkCyan);
+    }
+    .costBox{
+        position:relative;
+        margin-bottom:3rem;
+    }
+    .cost{
+        color:var(--white);
+        font-size:1.2rem;
+    }
+    .person{
+        color:var(--grayishCyan);
+        font-size:0.8rem;
+    }
+    .costPerPerson{
+        position:absolute;
+        top:-1rem;
+        right:0;
+        color:var(--strongCyan);
+        font-size:3.5rem;
+    }
+    .button{
+        box-sizing:border-box;
+        position:absolute;
+        width:77%;
+        bottom:4rem;
+    }
+    .button button{
+        border:none;
+        border-radius:0.5rem;
+        width:100%;
+        height:4rem;
+        background-color:var(--strongCyan);
+        opacity:0.3;
+        color:var(--veryDarkCyan);
+        font-size:1.8rem;
+        font-family: 'Space Mono', monospace;
+        font-weight:700;
+        cursor:pointer;
+    }
+}
